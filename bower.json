@@ -1,0 +1,17 @@
+{
+  "name": "wikipediaViewer",
+  "homepage": "https://github.com/elhaloui/wikipediaViewer",
+  "authors": [
+    "EL HALOUI <elhalouihichamcanvas2012@gmail.com>"
+  ],
+  "description": "desc",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="searchApp" ng-controller="searchCtrl">
+<head>
+<title ng-bind-template="{{query}} search"></title>
+	  <link rel="stylesheet" type="text/css" href="css/main.css" />
+   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<script src="js/angular.js"></script>
+
+		<div class="container">
+
+			<div id="wikisearch" class="wikisearch">
+				<form class="wikisearch-form" ng-submit='search()'>
+					<input class="wikisearch-input" type="search" placeholder="Search..." ng-model="query"/>
+				</form>
+				<div class="wikisearch-content" >
+				  <div ng-repeat="result in results ">
+					<a class="result" href="{{result.url}}">
+							<img class="round" src="{{result.image}}"/>
+							<h3>{{result.title}}</h3>
+							<p>{{result.extract}}</p>
+					</a>
+         </div>
+					</div><!-- /wikisearch-content -->
+				<span class="wikisearch-close"></span>
+			</div><!-- /wikisearch -->
+			<header>
+				<h1>Wikipedia Search </h1>
+				<a class="rand" href="https://en.wikipedia.org/wiki/Special:Random"> Random Article</a>
+		 </header>
+			<div class="overlay"></div>
+		</div><!-- /container -->
+		<script src="js/jquery.js"></script>
+	  <script src="js/main.js"></script>
+
+	</body>
+</html>
