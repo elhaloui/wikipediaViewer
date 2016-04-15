@@ -19,7 +19,7 @@ searchApp.controller('searchCtrl', function($scope, $http) {
             });
   });
     }
-    $scope.search();
+
 });
 $(document).ready(function(){
  $('input.wikisearch-input' ).on( 'focus', function(){$('#wikisearch').addClass('open');} );
